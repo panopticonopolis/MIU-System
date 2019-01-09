@@ -81,7 +81,7 @@ assess(strThrm, lstThrm)
 
 while True:
 	d = input('\nEnter your desired transformation, or ENTER to end: ')
-	if d == '1': 
+	if d == '1' and 'I' in strThrm[-1]: 
 		strThrm = Rule1(strThrm)
 		lstThrm = list(strThrm)	
 		count += 1
@@ -93,13 +93,13 @@ while True:
 		count += 1
 		display(count, 'Rule2', strThrm)
 		assess(strThrm, lstThrm)
-	if d == '3':
+	if d == '3' and 'III' in strThrm:
 		strThrm = Rule3(strThrm)
 		lstThrm = list(strThrm)
 		count += 1
 		display(count, 'Rule3', strThrm)
 		assess(strThrm, lstThrm)
-	if d == '4':
+	if d == '4' and 'UU' in strThrm:
 		strThrm = Rule4(strThrm)
 		lstThrm = list(strThrm)
 		count += 1
